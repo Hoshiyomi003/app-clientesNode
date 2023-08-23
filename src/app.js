@@ -17,7 +17,7 @@ app.set("view engine", "ejs");
 // middlewares
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
-app.use(cors({ origin: "http://localhost:3000/add", "clientes-test1.azurewebsites.net": true}));
+app.use(cors({ origin: "http://localhost:3000/add", "https://clientes-test1.azurewebsites.net": true}));
 
 // routes
 app.use(customerRoutes);
